@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(235, 198, 198);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border-style: borderbox;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    height: 65px;
+    background-color: rgb(33, 38, 35);
+    color: #fff;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 7px;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 44px;
+    padding: 0.8px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 21px;
+    font-style: 1.3rem;
+    gap: 3px;
+}
+
+.container {
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: chiller;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url(cassie.jpg);
+    background-size: cover;
+}
+
+.bottom {
+    position: sticky;
+    height: 90px;
+    background-color: #000;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#myProgressBar {
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+    margin: 12px 0px;
+}
+
+.icons img {
+    width: 30px;
+    clip-path: circle(45%);
+    cursor: pointer;
+    margin: 3px;
+}
+
+.songit {
+    height: 45px;
+    display: flex;
+    background-color: #fff;
+    color: black;
+    margin: 13px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.songit img {
+    width: 40px;
+    clip-path: circle(45%);
+    align-items: center;
+    font-size: 25px;
+}
+
+.songit img:nth-child(1) {
+    margin: 10px 4px 11px 10px;
+    align-items: center;
+    width: 30px;
+    cursor: pointer;
+}
+
+.songinfo {
+    position: absolute;
+    left: 10vw;
+    color: white;
+    align-items: center;
+    text-align: center;
+    font-family: chiller;
+    font-size: 24px;
+}
+
+.songinfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.pause {
+    transition: 0.1s;
+}
+
+.pause:active {
+    transform: scale(0.8);
+    opacity: 0.8;
+}

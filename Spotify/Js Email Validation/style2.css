@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #34efaa, #964d);
+}
+
+.box {
+    background: #fff;
+    padding: 15px 40px;
+    box-shadow: 12px 12px rgba(0, 0, 0, 0.1);
+}
+
+.box h3 {
+    position: relative;
+    font-size: 20px;
+    color: #ccc;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.box #form {
+    position: relative;
+}
+
+.box #form #email {
+    width: 400px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #333;
+    color: #333;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.box .inputbox {
+    position: relative;
+}
+
+#text {
+    display: block;
+    color: #999;
+    font-weight: 500;
+    padding: 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.75em;
+}
+
+.box #form.invalid .inputbox::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    background: url(/DEVAA.png);
+    filter: invert(22%) sepia(87%) saturate(5375%) hue-rotate(353deg) brightness(90%) contrast(128%);
+    background-size: cover;
+}
+
+.box #form.valid .inputbox::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    background: url(/DEVAA.png);
+    filter: invert(62%) sepia(53%) saturate(4853%) hue-rotate(82deg) brightness(118%) contrast(125%);
+    background-size: cover;
+}
